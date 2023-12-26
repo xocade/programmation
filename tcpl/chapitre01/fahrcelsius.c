@@ -2,7 +2,7 @@
 int main()
 {
 	printf("This program lists temperature conversion table");
-	printf(" from Fahrenheit to Celsius.");
+	printf(" from Celsius to Fahrenheit.");
 	printf("\n");
 	printf("\n");
 
@@ -11,10 +11,10 @@ int main()
 	      i   = 5;
 
 	float fahrenheit = min;
-	printf("\tFahrenheit to Celsius Table\n");
+	printf("\tCelcius To Fahrenheit Table\n");
 	while (fahrenheit < max) {
 		float celsius = (5.0/9.0) * (fahrenheit - 35);
-		printf("\t\t%3.0fF \t %6.2fC.\n", fahrenheit, celsius);
+		printf("\t\t%3.02fC \t %3.0fF.\n", celsius, fahrenheit);
 		fahrenheit = fahrenheit + i;
 	
 	}
