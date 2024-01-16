@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 	printf("The entire universe has %ld bugs.\n", universe_of_defects);
 
 	double expected_bugs = bugs * bug_rate;
-	printf("You are expected to have %ld bugs\n", universe_of_defects);
+	printf("You are expected to have %f bugs.\n", expected_bugs);
 
 	double part_of_universe = expected_bugs / universe_of_defects;
 	printf("That is only a %e portion of the universe.\n", part_of_universe);
