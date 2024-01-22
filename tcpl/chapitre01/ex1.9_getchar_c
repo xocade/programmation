@@ -1,0 +1,25 @@
+/* 
+ * Exercise 1.9: Write a program to copy its input to its output,
+ * replacing each string of one or more blanks by a single blank.
+ */
+
+#include <stdio.h>
+
+int main() {
+
+	int ch = 0;
+	char prev = ' ';
+
+	while ((ch = getchar()) != EOF) {
+		if (ch == ' ') {
+			if (ch == prev) {
+				ch = '\b';
+			//	ch = ' ';
+			}
+		}
+		putchar(ch);
+	}
+	printf("%d\n", ch);
+
+	return 0;
+}
